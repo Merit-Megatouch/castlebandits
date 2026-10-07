@@ -3,13 +3,8 @@
 # (usually in src/host/loader_services.cpp) before the game will start.
 # symbol | needed by
 GetLocation(unsigned char, char (&) [255]) | castlebandits.so
-IsScreenTouched() | castlebandits.so
 t_i_l() | castlebandits.so
 VideoClass::RefreshStaticVB() | castlebandits.so
 SystemClass::FlushKB() | castlebandits.so
 HighScoresManager::PlayerName(int) | castlebandits.so
 USBIO::FoundUSB() | castlebandits.so
-GameClass::GameClass() | castlebandits.so
-GameClass::~GameClass() | castlebandits.so
-typeinfo for GameClass | castlebandits.so
-voice_ramp_volume | castlebandits.so

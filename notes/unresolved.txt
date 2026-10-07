@@ -1,0 +1,122 @@
+# Symbols no library, runtime or megatouch-host provides (2026-10-07)
+# megatouch-host loads the game with RTLD_NOW, so each of these must be defined
+# (usually in src/host/loader_services.cpp) before the game will start.
+# symbol | needed by
+GetLocation(unsigned char, char (&) [255]) | castlebandits.so
+open_sprfli(char const*) | castlebandits.so
+close_sprfli(char const*) | castlebandits.so
+GetTouchCoord(int*, int*, int*) | castlebandits.so
+GetHelpFileName(char (&) [255], char const*, Locale::Languages, char const*) | castlebandits.so
+IsScreenTouched() | castlebandits.so
+get_sprfli_bitmap(char const*) | castlebandits.so
+next_sprfli_frame(char const*, int) | castlebandits.so
+get_sprfli_palette(char const*) | castlebandits.so
+MeritthonDisplayRound(int, int, int, unsigned long) | castlebandits.so
+t_i_l() | castlebandits.so
+u_m_m_s(char const*, char*, char*, unsigned int) | castlebandits.so
+QueFlush(bool) | castlebandits.so
+Translator::LoadTranslations(xml_gameinfo::GameIds) | castlebandits.so
+Translator::SetCurrentLanguage(Locale::Languages) | castlebandits.so
+VideoClass::RefreshStaticVB() | castlebandits.so
+WorldClass::FrameNumber(Bitmap*) | castlebandits.so
+WorldClass::WaitOnFrame(unsigned long, bool) | castlebandits.so
+WorldClass::PlayDeltaAnim(char*, int, int, unsigned long, unsigned long, char*, unsigned short, unsigned char, bool) | castlebandits.so
+WorldClass::CopyCompBitmap(Bitmap*, int, int, int, int, int, int, int, int, int, int, bool) | castlebandits.so
+WorldClass::LoadBmp(char const*, int, float, int, int, bool, bool, Bitmap*) | castlebandits.so
+WorldClass::SetBack(Bitmap*, int) | castlebandits.so
+WorldClass::SetBack(char const*, int) | castlebandits.so
+WorldClass::SetBack(short) | castlebandits.so
+WorldClass::ShowAll() | castlebandits.so
+WorldClass::GetFrame(Bitmap*, int) | castlebandits.so
+WorldClass::DeleteBmp(Bitmap*, unsigned char) | castlebandits.so
+WorldClass::NextFrame(unsigned char, unsigned char, bool, bool, bool, bool) | castlebandits.so
+WorldClass::PlayMovie(int, unsigned long, void (*)(unsigned char), unsigned char, bool, bool, bool, bool) | castlebandits.so
+WorldClass::WorldClass() | castlebandits.so
+SystemClass::FlushKB() | castlebandits.so
+system_info::SystemInfo::GetInstance() | castlebandits.so
+system_info::SystemInfo::IsPlatformGameTime() | castlebandits.so
+system_info::Get_Motherboard_Type() | castlebandits.so
+ChainRestClass::GetPicFileName(xml_gameinfo::GameIds, int) | castlebandits.so
+xml_gamerandom::PICRAND_record::PICRAND_record() | castlebandits.so
+xml_gamerandom::PICRAND_record::~PICRAND_record() | castlebandits.so
+xml_gamerandom::PICRAND_record::operator=(xml_gamerandom::PICRAND_record const&) | castlebandits.so
+HighScoresManager::PlayerName(int) | castlebandits.so
+abstract_metadata::abstract_metadata(char const*, db_common_field_def const*, int, char const*, db_common_index_def const*, int, char const* const*, int, bool) | castlebandits.so
+abstract_xml_record::AdjustTimeFields(int, long) | castlebandits.so
+abstract_xml_record::abstract_xml_record(abstract_xml_record const&) | castlebandits.so
+abstract_xml_record::abstract_xml_record() | castlebandits.so
+abstract_xml_record::~abstract_xml_record() | castlebandits.so
+RandomizedArrayClass::GetNextValue(int) | castlebandits.so
+RandomizedArrayClass::RandomizedArrayClass(xml_gamerandom::PICRAND_record*, int, unsigned char, unsigned short*) | castlebandits.so
+RandomizedArrayClass::~RandomizedArrayClass() | castlebandits.so
+List::Push(Group*) | castlebandits.so
+List::Clear(unsigned char) | castlebandits.so
+List::IsEmpty() | castlebandits.so
+List::List(List*) | castlebandits.so
+Books::Credits(xml_gameinfo::GameIds, enums::Span) | castlebandits.so
+Books::Instance() | castlebandits.so
+Group::Signal(Group::SpriteSignalType) | castlebandits.so
+Group::Signal(SpriteSignal*) | castlebandits.so
+Group::Message(Group::SpriteSignalType) | castlebandits.so
+Group::Message(SpriteSignal*) | castlebandits.so
+USBIO::FoundUSB() | castlebandits.so
+Bitmap::DeCompress() | castlebandits.so
+Bitmap::ReplaceTrans(bool) | castlebandits.so
+Bitmap::CreateSmackTextBox(char const*, FontBase*, signed char, unsigned short, unsigned short, bool) | castlebandits.so
+Bitmap::Scale(int, int, unsigned char) | castlebandits.so
+Bitmap::GreyBmp() | castlebandits.so
+Bitmap::LoadJPEG(char*, int, int, unsigned char) | castlebandits.so
+EventO::GetType() | castlebandits.so
+EventO::EventO() | castlebandits.so
+EventO::~EventO() | castlebandits.so
+Sprite::DoNextFrame() | castlebandits.so
+Sprite::AssignString(String*, unsigned long) | castlebandits.so
+Sprite::ClicksEnabled | castlebandits.so
+Sprite::DeleteAfterLast(unsigned long) | castlebandits.so
+Sprite::RunDiskAnimThenDelete(char const*, unsigned long, float, unsigned long, bool) | castlebandits.so
+Sprite::Move(int, int, int, int, int, int, unsigned long, unsigned long, unsigned char) | castlebandits.so
+Sprite::Curve(int, int, int, int, int, int, int, int, int, int, int, int, unsigned long, unsigned long, unsigned char) | castlebandits.so
+Sprite::Reset() | castlebandits.so
+Sprite::DoDraw() | castlebandits.so
+Sprite::Enable(unsigned long) | castlebandits.so
+Sprite::FadeIn(unsigned long, unsigned long, int, int) | castlebandits.so
+Sprite::SetBmp(Bitmap*, unsigned long) | castlebandits.so
+Sprite::Signal(Group::SpriteSignalType) | castlebandits.so
+Sprite::Signal(SpriteSignal*) | castlebandits.so
+Sprite::Disable(unsigned long, bool) | castlebandits.so
+Sprite::FadeOut(unsigned long, unsigned long, int, int) | castlebandits.so
+Sprite::Message(Group::SpriteSignalType) | castlebandits.so
+Sprite::Message(SpriteSignal*) | castlebandits.so
+Sprite::RunAnim(Bitmap*, int, int, int, unsigned long, float, unsigned long, int) | castlebandits.so
+Sprite::SetCord(float, float, float, unsigned long) | castlebandits.so
+Sprite::SetSize(int, int) | castlebandits.so
+Sprite::DoCommand(int) | castlebandits.so
+Sprite::PlaySound(char*, int, unsigned long) | castlebandits.so
+Sprite::Sprite(Bitmap*, unsigned long, Sprite*) | castlebandits.so
+Sprite::Sprite(Bitmap*, unsigned long, Sprite*) | castlebandits.so
+Sprite::~Sprite() | castlebandits.so
+String::String(char const*, int, char const*, int, signed char, int, int, int, unsigned char, unsigned char, unsigned short) | castlebandits.so
+Settings::Init() | castlebandits.so
+Settings::Load() | castlebandits.so
+Settings::Cleanup() | castlebandits.so
+Settings::Restore(abstract_xml_record const*) | castlebandits.so
+Settings::Settings(char const*, unsigned int) | castlebandits.so
+Settings::~Settings() | castlebandits.so
+GameClass::GameClass() | castlebandits.so
+GameClass::~GameClass() | castlebandits.so
+xml_gamerandom::PICRAND_record::operator!=(xml_gamerandom::PICRAND_record const&) const | castlebandits.so
+Settings::Key(unsigned int, bool) const | castlebandits.so
+typeinfo for abstract_record | castlebandits.so
+typeinfo for abstract_xml_record | castlebandits.so
+typeinfo for EventO | castlebandits.so
+typeinfo for Sprite | castlebandits.so
+typeinfo for Settings | castlebandits.so
+typeinfo for GameClass | castlebandits.so
+typeinfo for xml_gamerandom::PICRAND_record | castlebandits.so
+vtable for DOSLinuxWorld | castlebandits.so
+blit | castlebandits.so
+clear_bitmap | castlebandits.so
+gfx_driver | castlebandits.so
+screen | castlebandits.so
+set_palette | castlebandits.so
+voice_ramp_volume | castlebandits.so
